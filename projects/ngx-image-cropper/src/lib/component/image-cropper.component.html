@@ -1,4 +1,5 @@
 <div [style.background]="imageVisible && backgroundColor"
+     [style.max-height]="maxWrapperHeight"
      #wrapper
 >
     <img
@@ -25,6 +26,9 @@
          [style.height.px]="cropper.y2 - cropper.y1"
          [style.margin-left]="alignImage === 'center' ? marginLeft : null"
          [style.visibility]="imageVisible ? 'visible' : 'hidden'"
+         [style.background-image]="backgroundCropperImageUrl!=''? 'url('+backgroundCropperImageUrl+')':''"
+         [style.background-size]="backgroundCropperSize"
+         
          (keydown)="keyboardAccess($event)"
          tabindex="0"
     >

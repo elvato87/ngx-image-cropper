@@ -15,7 +15,7 @@
 <br />
 <br />
 <input [(ngModel)]="rotation" placeholder="Rotation" type="number" (keyup)="updateRotation()" /> <button (click)="zoomOut()">Zoom -</button> <button (click)="zoomIn()">Zoom +</button>
-<br />
+<br /> 
 
 <div class="cropper-wrapper">
     <image-cropper
@@ -37,7 +37,9 @@
         (imageLoaded)="imageLoaded()"
         (cropperReady)="cropperReady($event)"
         (loadImageFailed)="loadImageFailed()"
+        backgroundCropperImageUrl="/assets/photo-overlay.png"
+        maxWrapperHeight="400px"
     ></image-cropper>
   <div *ngIf="loading" class="loader">Loading...</div>
 </div>
-<img [src]="croppedImage" [style.border]="croppedImage ? '1px solid black' : 'none'" />
+<img [src]="croppedImage" [style.border]="croppedImage ? '1px solid black' : 'none'" /> 

@@ -27,6 +27,9 @@ export class CropperSettings {
   containWithinAspectRatio = false;
   hideResizeSquares = false;
   alignImage: 'left' | 'center' = 'center';
+  backgroundCropperImageUrl='';
+  backgroundCropperSize='cover';
+  maxWrapperHeight='';
 
   // Internal
   cropperScaledMinWidth = 20;

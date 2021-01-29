@@ -71,6 +71,9 @@ export class ImageCropperComponent implements OnChanges, OnInit {
   @Input() initialStepSize = this.settings.initialStepSize;
   @Input() roundCropper = this.settings.roundCropper;
   @Input() onlyScaleDown = this.settings.onlyScaleDown;
+  @Input() backgroundCropperImageUrl = this.settings.backgroundCropperImageUrl;
+  @Input() backgroundCropperSize = this.settings.backgroundCropperSize;
+  @Input() maxWrapperHeight = this.settings.maxWrapperHeight;
   @Input() imageQuality = this.settings.imageQuality;
   @Input() autoCrop = this.settings.autoCrop;
   @Input() backgroundColor = this.settings.backgroundColor;

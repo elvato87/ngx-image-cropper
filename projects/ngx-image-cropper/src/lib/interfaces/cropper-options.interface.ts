@@ -23,6 +23,9 @@ export interface CropperOptions {
   containWithinAspectRatio: boolean;
   hideResizeSquares: boolean;
   alignImage: 'left' | 'center';
+  backgroundCropperImageUrl:string;
+  backgroundCropperSize:string;
+  maxWrapperHeight:string;
 }
 
 export type OutputFormat = 'png' | 'jpeg' | 'bmp' | 'webp' | 'ico';
